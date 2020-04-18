@@ -24,6 +24,11 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+
+html {
+    font-size: 62.5%;; 
+}
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -57,13 +62,42 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#logo {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+#head-banner {
+    margin: 20px;
 }
 
 .container {
@@ -74,7 +108,7 @@ p {
 .top-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -82,7 +116,8 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+    font-size: 1.6rem;
 }
 
 .middle-content {
@@ -112,6 +147,47 @@ p {
     justify-content: center;
 }
 
+#teal {
+    background: teal;
+}
+
+#gold {
+    background:gold;
+}
+
+#cadetblue {
+    background: cadetblue;
+}
+
+#coral {
+    background: coral;
+}
+
+#crimson {
+    background: crimson;
+}
+
+#forestgreen {
+    background: forestgreen;
+}
+
+
+#darkorchid {
+    background: darkorchid;
+}
+
+#hotpink {
+    background: hotpink;
+}
+
+#indigo {
+    background: indigo;
+}
+
+#dodgerblue {
+    background: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -120,6 +196,7 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -137,10 +214,18 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 800) {
+    
+}
+
+@media (max-width: 500) {
+
 }
