@@ -223,12 +223,17 @@ footer nav a {
 }
 
 @media (max-width: 800px) {
+    
+    body {
+        margin: 0;
+    }
+    
     header nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        margin: 20px;
     }
 
     #logo {
@@ -238,10 +243,9 @@ footer nav a {
     header nav a {
         background: white;
         color: lightgray;
-        border-radius:10%;
+        border-radius: 5px;
         border: 1px solid lightgray;
-        padding: 1px;
-        margin: 1px;
+        padding: 3px;
         width: 80%;
         align-items: center;
         justify-content: center;
@@ -254,23 +258,39 @@ footer nav a {
         font-weight: bold;
     }
 
+    .products{
+        display:none;
+    }
+
     #head-banner {
         width: 100%;
-        margin: 0px;
+        margin: 0;
     }
 
-    body {
+    .container {
         width: 100%;
     }
 
-    .top-content {
+    .top-content .text-container {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 10px;
+        padding: 0;
+    }
+
+    .text-container h2 {
+        text-align: left;
+    }
+
+    .middle-content .boxes .box {
+        width: 15%;
     }
 
     .middle-content .boxes {
         flex-direction: column;
         align-items: center;
+        font-size: 1.6rem;
     }
 
     #crimson{
@@ -307,5 +327,104 @@ footer nav a {
 }
 
 @media (max-width: 500px) {
+    body {
+        margin: 0;
+    }
+    
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
 
+    #logo {
+        padding-bottom: 50px;
+    }
+
+    header nav a {
+        background: white;
+        color: lightgray;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        padding: 3px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home {
+        background: lightgray;
+        color: black;
+        font-weight: bold;
+    }
+
+    .products{
+        display:none;
+    }
+
+    #head-banner {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .top-content .text-container {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 10px;
+        padding: 0;
+    }
+
+    .text-container h2 {
+        text-align: left;
+    }
+
+    .middle-content .boxes .box {
+        width: 30%;
+    }
+
+    .middle-content .boxes {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.6rem;
+    }
+
+    #crimson{
+        display: none
+    }
+
+    #forestgreen{
+        display: none
+    }
+
+    #darkorchid{
+        display: none
+    }
+
+    #hotpink{
+        display: none
+    }
+
+    #indigo{
+        display: none
+    }
+
+    #dodgerblue{
+        display: none
+    }
+
+    .bottom-content {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
 }
